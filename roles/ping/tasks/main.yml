@@ -1,0 +1,7 @@
+- name: Ping site
+  shell:
+    "lscpu"
+  register: os_info
+  
+- debug:
+    msg: "{{os_info.stdout_lines}}"
