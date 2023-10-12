@@ -1,6 +1,6 @@
 - name: Ping site
   shell:
-    "lspci"
+    "lscpu"
   register: os_info
   
 - debug:
